@@ -2,7 +2,6 @@ import React from 'react'
 import { Grid, Button } from '@mui/material'
 import {makeStyles} from '@mui/styles'
 import ButtonAppBar from './NavBar'
-import { flexbox } from '@mui/system';
 
 function Main() {
     const mainStyles = makeStyles({
