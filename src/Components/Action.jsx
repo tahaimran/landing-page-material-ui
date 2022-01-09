@@ -5,7 +5,7 @@ function Action() {
 const ActionStyle = makeStyles({
     root:{
         width: '50%',
-        height: "150px",
+        height: "auto",
         position:"relative" ,
         top: '60px',
         zIndex: '1',
@@ -14,13 +14,24 @@ const ActionStyle = makeStyles({
         margin:' 0 auto',
         padding:" 15px",
         borderRadius:" 20px !important"
+    }, btn:{
+        backgroundColor:'hsl(322, 100%, 66%) !important',
+        borderRadius: '30px !important',
+        fontSize:' 15px !important',
+        width: '250px',
+        height: '50px',
+       " &:hover":{
+           opacity:'0.6' ,
+           transitionDuration:'1s ease-in !important',
+           transform: 'scale(1.1) !important'
+       }
     }
 })
 const  classes = ActionStyle();
     return (
         <Paper className={classes.root}  >
             <h2>Ready To Build Your Community?</h2>
-            <Button variant="contained"   color='secondary'>Get Started For Free</Button>
+            <Button className={classes.btn}  variant="contained"   color='secondary'>Get Started For Free</Button>
         </Paper>
     )
 }

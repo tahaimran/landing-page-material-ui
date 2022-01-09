@@ -5,7 +5,8 @@ import {makeStyles} from '@mui/styles'
 function Features() {
     const featureStyle = makeStyles({
         featureCont:{
-            marginTop: '100px'
+            marginTop: '100px',
+            margin:' 0 auto'
         },
         img:{
             width: "80%",
@@ -17,7 +18,7 @@ function Features() {
             padding:' 20px',
             borderRadius: "20px",
             marginBottom: "30px",
-            boxShadow: '5px 5px 5px 2px  hsl(193, 100%, 96%)',
+            boxShadow: '5px 5px 5px 5px  hsl(193, 100%, 96%)',
             alignItems: 'center',
             flexWrap: 'wrap-reverse !important',
         }
@@ -31,7 +32,7 @@ const classes = featureStyle()
                     <h2 > Grow Together</h2>
                     <p>Generate meaningful discussions with your audience and build a strong, loyal community. Think of the insightful conversations you miss out on with a feedback form.</p>
                 </Grid>
-                <Grid item xs={12} sm={6}>
+                <Grid item xs={12} sm={5}>
                     <img className={classes.img}  src="images/illustration-grow-together.svg" alt="" srcset="" />
                 </Grid>
             </Grid>

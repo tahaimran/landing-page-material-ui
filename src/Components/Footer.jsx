@@ -30,17 +30,18 @@ return (
                         <ListItemIcon className={classes.icon} >
                             <LocationOn />
                         </ListItemIcon>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</ListItem>
+                        <ListItemText>   Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</ListItemText>  </ListItem>
                     <ListItem>
                         <ListItemIcon className={classes.icon}>
                             <PhoneInTalk />
                         </ListItemIcon>
-                        +1-543-123-4567</ListItem>
+                        <ListItemText>+1-543-123-4567</ListItemText> 
+                        </ListItem>
                     <ListItem>
                         <ListItemIcon className={classes.icon}>
                             <Email />
                         </ListItemIcon>
-                        example@huddle.com
+                      <ListItemText>example@huddle.com</ListItemText>  
                     </ListItem>
                 </List>
             </Grid>
@@ -73,7 +74,7 @@ return (
                 </List>
             </Grid>
             <Grid item xs={12} sm={1} >
-                <List >
+                <List className='icons'  sx={{display: 'flex'}} >
                     <ListItem>
                         <ListItemIcon><Facebook /></ListItemIcon>
                     </ListItem>
